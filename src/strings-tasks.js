@@ -230,7 +230,7 @@ function endsWith(str, substr) {
  *   formatTime(0, 0) => "00:00"
  */
 function formatTime(minutes, seconds) {
-  const padStr = (value) => String(value).padStart(2,0);
+  const padStr = (value) => String(value).padStart(2, 0);
   return `${padStr(minutes)}:${padStr(seconds)}`;
 }
 
@@ -244,8 +244,8 @@ function formatTime(minutes, seconds) {
  *   reverseString('abcdef') => 'fedcba'
  *   reverseString('12345') => '54321'
  */
-function reverseString(/* str */) {
-  throw new Error('Not implemented');
+function reverseString(str) {
+  return str.split('').reverse().join('');
 }
 
 /**
